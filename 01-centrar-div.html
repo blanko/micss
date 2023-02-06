@@ -7,17 +7,25 @@
     <title>CSS 01 - Centrar Div</title>
     <link rel="stylesheet" href="style-reset.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .container {
             width: 90%;
             height: 500px; 
             margin: 90px auto;
             outline: 3px solid;
             display: flex;
+            position: relative;
             justify-content: center;
             align-items: center;
+            /* place-items: center; */
         }
 
         .item {
+            /* margin: auto; */
             width: 50%;
             height: 50%;
             background: steelblue;
